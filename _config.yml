@@ -98,4 +98,6 @@ theme: maupassant
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repository: git@github.com:soltylemon/soltylemon.github.io.git
+  branch: master
