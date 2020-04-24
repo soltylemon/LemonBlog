@@ -60,13 +60,9 @@ dependencies {
 </li>
 </ol>
 <h4 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h4><p><code>@Test</code>  </p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>表示该方法是一个测试用例，可以执行  </p>
-</blockquote>
-</blockquote>
-</blockquote>
+<ul>
+<li>表示该方法是一个测试用例，可以执行  </li>
+</ul>
 <p><code>@BeforeClass</code>  </p>
 <ul>
 <li>在测试类里所有用例运行之前运行一次这个方法，并且只会运行一次  </li>
@@ -92,15 +88,17 @@ dependencies {
 <p>使用</p>
 <img src="/2020/04/24/android_uinit_test/rebolectric_use.png" class="">
 
+
 <p><strong><a href="https://github.com/mockito/mockito" target="_blank" rel="noopener">mockito</a></strong><br>在写单元测试的过程中，我们往往会遇到要测试的类有很多依赖，这些依赖的类/对象/资源又有别的依赖，从而形成一个大的依赖树，要在单元测试的环境中完整地构建这样的依赖，是一件很困难的事情,并且我们也不关注这些依赖到底功能正不正确。<br>Mockito框架用一个虚拟的对象（Mock对象）来创建这种不易构建的类以便测试。<br>配置</p>
 <img src="/2020/04/24/android_uinit_test/mockito_config.png" class="">  
-<p>使用  </p>
+<p>使用</p>
 <img src="/2020/04/24/android_uinit_test/mockito_use1.png" class="">
 <img src="/2020/04/24/android_uinit_test/mockito_use2.png" class="">
 
-<p><strong><a href="https://github.com/google/truth" target="_blank" rel="noopener">google truth</a></strong><br>一个用于测试的断言库。简单易用，更具可读性。<br>配置  </p>
+
+<p><strong><a href="https://github.com/google/truth" target="_blank" rel="noopener">google truth</a></strong><br>一个用于测试的断言库。简单易用，更具可读性。<br>配置</p>
 <img src="/2020/04/24/android_uinit_test/truth_config.png" class="">  
-<p>使用  </p>
+<p>使用</p>
 <img src="/2020/04/24/android_uinit_test/truth_use.png" class="">
 
 <h3 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h3><p><a href="https://github.com/leimenghao1991/AndroidUnitTestDemo" target="_blank" rel="noopener">Android Test Demo</a></p>
