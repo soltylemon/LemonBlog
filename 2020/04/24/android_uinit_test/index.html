@@ -83,20 +83,20 @@ dependencies {
 <ul>
 <li>忽略某个用例，被忽略的用例将不会被执行</li>
 </ul>
-<h2 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h2><h3 id="robolectric"><a href="#robolectric" class="headerlink" title="robolectric"></a><a href="http://robolectric.org/" target="_blank" rel="noopener">robolectric</a></h3><p>它实现了一套JVM能运行的Android SDK，从而能够脱离Android环境进行测试，将原来运行一次测试的时间从几分钟缩短到几秒钟<br>配置</p>
+<h2 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h2><h3 id="robolectric"><a href="#robolectric" class="headerlink" title="robolectric"></a>robolectric</h3><p>官网：<a href="http://robolectric.org/" target="_blank" rel="noopener">robolectric</a><br>它实现了一套JVM能运行的Android SDK，从而能够脱离Android环境进行测试，将原来运行一次测试的时间从几分钟缩短到几秒钟<br>配置</p>
 <img src="/2020/04/24/android_uinit_test/robolectric_config.png" class="">
 <p>使用</p>
 <img src="/2020/04/24/android_uinit_test/rebolectric_use.png" class="">
 
 
-<h3 id="mockito"><a href="#mockito" class="headerlink" title="mockito"></a><a href="https://github.com/mockito/mockito" target="_blank" rel="noopener">mockito</a></h3><p>在写单元测试的过程中，我们往往会遇到要测试的类有很多依赖，这些依赖的类/对象/资源又有别的依赖，从而形成一个大的依赖树，要在单元测试的环境中完整地构建这样的依赖，是一件很困难的事情,并且我们也不关注这些依赖到底功能正不正确。<br>Mockito框架用一个虚拟的对象（Mock对象）来创建这种不易构建的类以便测试。<br>配置</p>
+<h3 id="mockito"><a href="#mockito" class="headerlink" title="mockito"></a>mockito</h3><p>官网：<a href="https://github.com/mockito/mockito" target="_blank" rel="noopener">mockito</a><br>在写单元测试的过程中，我们往往会遇到要测试的类有很多依赖，这些依赖的类/对象/资源又有别的依赖，从而形成一个大的依赖树，要在单元测试的环境中完整地构建这样的依赖，是一件很困难的事情,并且我们也不关注这些依赖到底功能正不正确。<br>Mockito框架用一个虚拟的对象（Mock对象）来创建这种不易构建的类以便测试。<br>配置</p>
 <img src="/2020/04/24/android_uinit_test/mockito_config.png" class="">  
 <p>使用</p>
 <img src="/2020/04/24/android_uinit_test/mockito_use1.png" class="">
 <img src="/2020/04/24/android_uinit_test/mockito_use2.png" class="">
 
 
-<h3 id="google-truth"><a href="#google-truth" class="headerlink" title="google truth"></a><a href="https://github.com/google/truth" target="_blank" rel="noopener">google truth</a></h3><p>一个用于测试的断言库。简单易用，更具可读性。<br>配置</p>
+<h3 id="google-truth"><a href="#google-truth" class="headerlink" title="google truth"></a>google truth</h3><p>官网：<a href="https://github.com/google/truth" target="_blank" rel="noopener">google truth</a><br>一个用于测试的断言库。简单易用，更具可读性。<br>配置</p>
 <img src="/2020/04/24/android_uinit_test/truth_config.png" class="">  
 <p>使用</p>
 <img src="/2020/04/24/android_uinit_test/truth_use.png" class="">
