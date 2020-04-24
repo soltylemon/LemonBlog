@@ -68,57 +68,37 @@ dependencies {
 </blockquote>
 </blockquote>
 <p><code>@BeforeClass</code>  </p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>在测试类里所有用例运行之前运行一次这个方法，并且只会运行一次  </p>
-</blockquote>
-</blockquote>
-</blockquote>
+<ul>
+<li>在测试类里所有用例运行之前运行一次这个方法，并且只会运行一次  </li>
+</ul>
 <p><code>@AfterClass</code></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>与<code>@BeforeClass</code>对应，在测试类里的所有用例运行之后运行一次，并且只会运行一次  </p>
-</blockquote>
-</blockquote>
-</blockquote>
+<ul>
+<li>与<code>@BeforeClass</code>对应，在测试类里的所有用例运行之后运行一次，并且只会运行一次  </li>
+</ul>
 <p><code>@Before</code></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>在每个用例运行之前运行一次</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<ul>
+<li>在每个用例运行之前运行一次</li>
+</ul>
 <p><code>@After</code></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>与<code>@Before</code>对应，在每个用例运行之后运行一次  </p>
-</blockquote>
-</blockquote>
-</blockquote>
+<ul>
+<li>与<code>@Before</code>对应，在每个用例运行之后运行一次  </li>
+</ul>
 <p><code>@Ignore</code></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>忽略某个用例，被忽略的用例将不会被执行</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h3 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h3><h4 id="robolectric"><a href="#robolectric" class="headerlink" title="robolectric"></a><a href="http://robolectric.org/" target="_blank" rel="noopener">robolectric</a></h4><p>它实现了一套JVM能运行的Android SDK，从而能够脱离Android环境进行测试，将原来运行一次测试的时间从几分钟缩短到几秒钟<br>配置</p>
+<ul>
+<li>忽略某个用例，被忽略的用例将不会被执行</li>
+</ul>
+<h3 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h3><p><strong><a href="http://robolectric.org/" target="_blank" rel="noopener">robolectric</a></strong><br>它实现了一套JVM能运行的Android SDK，从而能够脱离Android环境进行测试，将原来运行一次测试的时间从几分钟缩短到几秒钟<br>配置</p>
 <img src="/2020/04/24/android_uinit_test/robolectric_config.png" class="">
 <p>使用</p>
 <img src="/2020/04/24/android_uinit_test/rebolectric_use.png" class="">
 
-<h4 id="mockito"><a href="#mockito" class="headerlink" title="mockito"></a><a href="https://github.com/mockito/mockito" target="_blank" rel="noopener">mockito</a></h4><p>在写单元测试的过程中，我们往往会遇到要测试的类有很多依赖，这些依赖的类/对象/资源又有别的依赖，从而形成一个大的依赖树，要在单元测试的环境中完整地构建这样的依赖，是一件很困难的事情,并且我们也不关注这些依赖到底功能正不正确。<br>Mockito框架用一个虚拟的对象（Mock对象）来创建这种不易构建的类以便测试。<br>配置</p>
+<p><strong><a href="https://github.com/mockito/mockito" target="_blank" rel="noopener">mockito</a></strong><br>在写单元测试的过程中，我们往往会遇到要测试的类有很多依赖，这些依赖的类/对象/资源又有别的依赖，从而形成一个大的依赖树，要在单元测试的环境中完整地构建这样的依赖，是一件很困难的事情,并且我们也不关注这些依赖到底功能正不正确。<br>Mockito框架用一个虚拟的对象（Mock对象）来创建这种不易构建的类以便测试。<br>配置</p>
 <img src="/2020/04/24/android_uinit_test/mockito_config.png" class="">  
 <p>使用  </p>
 <img src="/2020/04/24/android_uinit_test/mockito_use1.png" class="">
 <img src="/2020/04/24/android_uinit_test/mockito_use2.png" class="">
 
-<h4 id="google-truth"><a href="#google-truth" class="headerlink" title="google truth"></a><a href="https://github.com/google/truth" target="_blank" rel="noopener">google truth</a></h4><p>一个用于测试的断言库。简单易用，更具可读性。<br>配置  </p>
+<p><strong><a href="https://github.com/google/truth" target="_blank" rel="noopener">google truth</a></strong><br>一个用于测试的断言库。简单易用，更具可读性。<br>配置  </p>
 <img src="/2020/04/24/android_uinit_test/truth_config.png" class="">  
 <p>使用  </p>
 <img src="/2020/04/24/android_uinit_test/truth_use.png" class="">
